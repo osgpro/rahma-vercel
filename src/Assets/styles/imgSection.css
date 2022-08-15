@@ -1,0 +1,135 @@
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+.headLine {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Imgcontainer {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.imgBox {
+  height: 600px;
+}
+
+.Maintitle {
+  letter-spacing: 2px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.textCon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: space-between;
+}
+
+.videoDiv,
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: 1000;
+}
+
+.videoDiv {
+  margin-bottom: -6rem;
+}
+
+.videoDiscHead {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  .videoDiscHead {
+    font-size: 17px !important;
+  }
+}
+
+.videoDiscDiv {
+  background-color: #d2d5e5;
+  padding: 9rem 2rem 2rem 2rem;
+  margin-bottom: 1rem;
+}
+.discriptionPaDiv {
+  width: 100%;
+  background-color: #d2d5e5;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .discriptionPaDiv p {
+    font-size: 17px !important;
+  }
+}
+
+.discriptionPa {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.MainTitlediv {
+  padding: 2rem 0rem;
+}
+
+@media (max-width: 500px) {
+  .MainTitlediv {
+    padding: 1rem 1rem;
+    font-size: 19px;
+  }
+}
+
+.smallTitlePa {
+  padding: 1rem;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.bluefont {
+  color: #3c4a99;
+}
+
+@media (max-width: 770px) {
+  .videoBox {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .videoBox {
+    width: 300px;
+    height: 300px;
+  }
+}

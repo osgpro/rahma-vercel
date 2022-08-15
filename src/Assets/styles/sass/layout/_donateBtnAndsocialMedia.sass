@@ -1,0 +1,48 @@
+@import '../layout/variables'
+
+.donateBtnandsocialContainer
+    display: flex !important
+    justify-content: space-between !important
+    align-items: flex-end !important
+    position: fixed !important
+    top: 0 !important
+    z-index: 7000 !important
+    height: 100vh !important
+    width: 100% !important
+    pointer-events: none !important
+    .MuiBox-root
+        width: 100px !important
+        flex-grow: 0 !important
+        height: 100% !important
+        @media ( max-width: 500px )
+            margin-bottom: 3rem !important
+    .donateBtnFix
+        height: 50px !important
+        width: auto !important
+        pointer-events: auto !important
+        margin-right: -3.3rem !important
+        transition: all .5s ease-in-out !important
+        position: relative !important
+        margin-bottom: 8rem !important
+        @media ( max-width: 500px )
+            margin-bottom: 5rem !important
+        a
+            span
+                transition: all .5s ease-in-out !important
+        &:hover
+            margin-right: 0rem !important
+            a
+                span
+                    margin-left: 0.3rem !important
+        a
+            background-color: $main-blue !important
+            text-decoration: none !important
+            color: white
+            padding: 1rem 1rem
+            border-radius: 10px 0px 0px 10px
+            line-height: 50px
+            transition: all .5s ease-in-out
+            &:hover
+                background-color: $main-green !important
+            span 
+                margin-left: 1.5rem !important

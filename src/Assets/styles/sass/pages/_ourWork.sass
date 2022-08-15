@@ -1,0 +1,126 @@
+@import '../layout/variables'
+.ourWorkPage
+    background-color: #f3f0ea !important   
+    div
+        position: relative
+        .firsth1
+            color: white
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 2000
+        .shadowONtheImage
+            min-width: 100% !important
+            min-height: 100% !important
+            background-color: $main-blue
+            opacity: 0.8
+            position: absolute
+            top: 0
+            left: 0
+            img
+                min-width: 100% !important
+                min-height: 100% !important
+                max-width: 100% !important
+                max-height: 100% !important
+                object-fit: cover
+                position: absolute
+                top: 0
+                left: 0
+    img
+        max-width: 100% !important
+        object-fit: cover
+        min-width: 100%
+        max-height: 582px !important
+        @media screen and ( max-width: 991px )
+            height: 400px !important
+            width: 100% !important
+        @media screen and ( max-width: 681px )
+            height: 200px !important
+    .container
+        .work-items
+            padding-bottom: 3rem
+            h4
+                background-color: #d2d5e5
+                padding: 1rem 2rem  
+                color: #707070
+                text-align: center
+                margin-top: 2rem !important
+                margin-bottom: 2rem !important
+                font-size: 20px !important
+                font-weight: 400 !important
+                letter-spacing: 1px !important
+            .items
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                a
+                    width: 113px !important
+                    max-width: 113px !important
+                    height: auto !important
+                    border: none !important
+                    outline: none !important
+                    text-decoration: none !important
+                    box-shadow: 5px 5px 5px gray
+                    margin: 50px 70px 
+                    background-color: white
+                    border-radius: 30px 30px 0 0 
+                    color: black
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    svg
+                        width: 82px 
+                        height: 90px 
+                        path
+                            transition: all .5s ease-in-out
+                    &:hover
+                        svg
+                            path
+                                fill: $main-green !important
+                    p
+                        text-align: center
+                        margin-bottom: 0 !important
+.seasonal_campaigns
+    background-color: #e3e3e3
+    padding-top: 4rem !important
+    padding-bottom: 4rem !important
+    .container
+        .seasonal-p
+            margin-bottom: 2rem
+            margin-top: 2rem
+            max-width: 450px
+            color: gray !important
+        .seasonal_campaigns_box
+            display: flex !important
+            flex-wrap: wrap !important
+            justify-content: space-around
+            div
+                width: 300px 
+                margin: 2rem
+                img
+                    max-width: 300px
+                    min-width: 299px 
+                    max-height: 180px
+                    min-height: 179px
+                    object-fit: cover
+                    border-radius: 50px 50px 0 0
+                a
+                    padding: 0 !important
+                    h5
+                        background-color: $main-blue
+                        padding: 1.5rem 0.5rem
+                        color: white
+                        text-align: center
+                        margin-bottom: 0 !important
+                        transition: all .5s ease-in-out
+                        &:hover
+                            background-color: $main-green !important
+                p
+                    background-color: white
+                    padding: 1.5rem
+                    border-radius: 0 0 50px 50px
+                    font-size: 12px 
+                    color: gray
+                    min-height: 156px !important

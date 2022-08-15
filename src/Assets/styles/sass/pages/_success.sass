@@ -1,0 +1,195 @@
+@import "../layout/variables"
+
+.successPage-header
+    position: relative
+    h1
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #ffffff
+    img
+        max-width: 100% !important
+        object-fit: cover
+        min-width: 100%
+        max-height: 582px !important
+        @media screen and ( max-width: 991px )
+            height: 400px !important
+            width: 100% !important
+        @media screen and ( max-width: 681px )
+            height: 200px !important
+    .shadowONtheImage
+        min-width: 100% !important
+        min-height: 100% !important
+        background-color: $main-blue
+        opacity: 0.8
+        position: absolute
+        top: 0
+        left: 0
+        img
+            min-width: 100% !important
+            min-height: 100% !important
+            max-width: 100% !important
+            max-height: 100% !important
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+
+.stories
+    padding: 5rem 1rem
+    background-color: #f3f0ea !important
+    .container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .story
+            box-shadow: 10px 10px 10px #70707062
+            margin: 3rem 1.5rem
+            background-color: white
+            border-radius: 15px
+            display: flex
+            flex-direction: column
+            width: 29%
+            @media screen and ( max-width: 1199px )
+                width: 43% !important
+            @media screen and ( max-width: 767px )
+                width: 90% !important
+            @media screen and ( max-width: 450px )
+                width: 100% !important
+                margin: 3rem 0rem
+            img
+                max-width: 386px
+                min-width: 99.9%
+                width: 100%
+                min-height: 227px
+                max-height: 226px
+                object-fit: cover
+                border-radius: 15px
+            p
+                max-width: 340px
+            div
+                margin: 2rem 0
+                padding: 1rem
+                border-radius: 15px
+                color: $main-blue
+                h5
+                    font-weight: 600
+            position: relative
+            button
+                background: white
+                border: 2px solid $main-blue
+                border-radius: 50px
+                padding: 1rem 2rem
+                font-weight: 700
+                font-size: 12px
+                color: $main-blue
+                width: 160px !important
+                margin-inline: auto !important
+                position: absolute
+                bottom: -20px 
+                left: 50%
+                transform: translateX(-50%)
+
+.success_details_container 
+    margin: 5rem 0
+    min-height: 600px
+    height: 600px
+    @media screen and ( max-width: 785px )
+        height: auto !important
+        min-height: auto !important
+    .container
+        height: 100%
+        .VideoContainer
+            width: 80%
+            margin: auto
+            height: 100%
+            @media screen and ( max-width: 1024px )
+                width: 100% !important
+            iframe
+                width: 100%
+                height: 100%
+                @media screen and ( max-width: 785px )
+                    height: auto
+                    min-height: 300px
+                @media screen and ( max-width: 550px )
+                    min-height: 197px !important
+
+.text_under_video
+    .container
+        margin: 3rem auto
+        h1
+            font-weight: 700
+            margin: auto
+            width: 80% 
+            @media screen and ( max-width: 1024px )
+                width: 100% !important 
+        p
+            color: #707070
+            margin: auto
+            margin-top: 2rem
+            width: 80% 
+            @media screen and ( max-width: 1024px )
+                width: 100% !important
+
+.SwiperSuccess
+    width: 80% !important
+    height: 300px !important
+    @media screen and ( max-width: 1024px )
+        width: 100% !important
+    .swiper-slide
+        background: transparent !important
+        align-items: flex-start
+        max-height: 258px !important
+        a
+            height: 100% !important
+            max-height: 100%
+        img
+            height: 100%
+            max-height: 100%
+
+
+
+// .success_details_slider
+//     .container
+//         .swiper-pagination
+// span
+//     background-color: gray !important
+//     width: 30px !important
+//     height: 5px !important
+//     border-radius: 0 !important
+// .swiper-pagination-bullet-active
+//     background-color: $main-green !important
+
+.interestedIn
+    margin-top: 5rem
+    margin-bottom: 5rem
+    h1
+        color: #707070
+        font-weight: 700 !important
+        text-align: center
+        margin-bottom: 4rem
+        @media screen and ( max-width: 1024px )
+            padding: 0 1rem !important
+    .container
+        & > div
+            width: 80%
+            display: flex
+            margin: auto
+            flex-wrap: wrap !important
+            justify-content: space-between
+            @media screen and ( max-width: 1024px )
+                // flex-wrap: wrap !important
+                width: 100%
+            div
+                width: 49%
+                @media screen and ( max-width: 1024px )
+                    width: 100% !important
+                img
+                    width: 100%
+                    min-height: 268px
+                    max-width: 508px
+                    max-height: 269px
+                    object-fit: cover
+                    margin-bottom: 1rem

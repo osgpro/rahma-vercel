@@ -1,0 +1,148 @@
+@import '../layout/variables'
+.whereweworkMap
+    position: relative
+    .container
+        p
+            padding-top: 4rem
+            color: #707070
+            margin-bottom: 0 !important
+        h1
+            color: #707070
+            font-weight: 700
+            margin-bottom: 3rem
+        @media screen and ( max-width: 991px )
+            width: 100% !important
+    .map
+        width: 100%
+        height: 667px
+        overflow: hidden
+        position: relative
+        svg
+            position: absolute
+            top: 0px
+            height: 100% !important 
+            outline: none !important
+            width: 100%
+            &:active
+                pointer-events: none !important
+            @media screen and ( max-width: 1650px )
+                transform: scale(1.2)
+                top: -66px
+            @media screen and ( max-width: 1200px )
+                transform: scale(1.3)
+                top: -100px
+        z-index: 98
+        .btnviewList
+            position: absolute
+            right: 40px !important
+            z-index: 100
+            top: 20px
+            background: transparent
+            outline: noen !important
+            border: none !important
+            font-size: 20px
+            color: $main-blue
+            font-weight: 500
+            i
+                margin-left: 0.5rem
+        .acc_container
+            display: flex !important
+            align-items: center !important
+            height: 100%
+            .accordion 
+                @media screen and ( max-width: 991px )
+                    margin-bottom: 5rem !important
+            .accordion-item
+                background-color: transparent !important
+                .accordion-header
+                    background: transparent !important
+                    background-color: transparent !important
+                    button
+                        color: #80fb80 
+                        background: transparent !important
+                        border-bottom: 2.5px solid white
+                        font-weight: 600
+                        box-shadow: none !important
+            .accordion-body
+                display: flex !important
+                flex-wrap: wrap !important
+                background: transparent !important
+                background-color: transparent !important
+                border-bottom: 2px solid white
+                h6
+                    width: 45% !important
+                    color: white
+                    margin: 0.5rem 0
+                    cursor: pointer
+        .bg_map_shadow
+            background-color: #000000bb
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    .text
+        position: absolute
+        left: 40px 
+        bottom: 20px 
+        z-index: 100
+        display: flex
+        align-items: center
+        &::before
+            content: ''
+            position: absolute
+            top: -10px
+            left: 0
+            height: 1.5px 
+            width: 100%
+            background-color: #707070
+        figure
+            background-color: $main-blue
+            width: 15px 
+            height: 15px
+            margin-right: 0.5rem
+            border-radius: 50% 
+        p
+            color: #707070
+            font-size: 20px
+            font-weight: 500
+            @media screen and ( max-width: 991px )
+                font-size: 17px
+
+.crisis
+    padding-top: 6rem
+    padding-bottom: 6rem
+    background-color: #f3f0ea !important
+    .container
+        h4
+            color: #707070
+            margin-top: 2rem 
+            font-weight: 700
+    .seasonal_campaigns_box
+        display: flex !important
+        flex-wrap: wrap !important
+        justify-content: space-around
+        div
+            width: 300px 
+            margin: 2rem
+            img
+                max-width: 300px
+                min-width: 299px 
+                max-height: 180px
+                min-height: 179px
+                object-fit: cover
+                border-radius: 50px 50px 0 0
+            a
+                padding: 0 !important
+                h5
+                    background-color: $main-blue
+                    padding: 1.5rem 0.5rem
+                    color: white
+                    text-align: center
+                    margin-bottom: 0 !important
+            p
+                background-color: white
+                padding: 1.5rem
+                border-radius: 0 0 50px 50px
+                font-size: 12px 
+                color: gray

@@ -1,0 +1,131 @@
+@import "../layout/variables"
+
+.Chart 
+    padding: 1rem 0 
+    background-color: #f3f0ea
+    .container
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width: 991px )
+            flex-direction: column !important
+        .firstsection
+            display: flex
+            margin-top: -3rem
+            @media screen and ( max-width: 991px )
+                justify-content: center 
+            @media screen and ( max-width: 497px )
+                flex-direction: column !important
+            & > div
+                    background-color: white
+                    padding: 0 1rem
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    min-width: 300px !important
+                    font-weight: 600
+                    margin: 0.5rem 0.5rem
+                    @media screen and ( max-width: 1199px )
+                        min-width: 217px !important
+                    div
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        svg
+                            width: 100px
+                            height: 100px
+                            margin-bottom: 0.5rem
+                    .text
+                        display: flex
+                        flex-direction: row !important
+                        justify-content: space-between !important
+        .chartcontainer
+            display: flex
+            align-items: center
+            @media screen and ( max-width: 991px )
+                justify-content: center
+            @media screen and ( max-width: 497px )
+                flex-direction: column !important
+            .chartitself
+                width: 250px
+                height: 250px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                @media screen and ( max-width: 991px )
+                    margin-top: 2rem !important
+                h4
+                    text-align: center
+                    font-weight: 700 !important
+                    margin-top: 1rem
+                    color: $dark-gray
+                    margin-bottom: 0 !important
+                    margin-top: 0 !important
+                svg
+                    margin-top: -1rem
+                    max-width: 100% !important
+                    margin: auto !important
+                    height: 60% !important
+        .chartinfo
+            margin-left: 2.5rem
+            @media screen and ( max-width: 1399px )
+                margin-left: .5rem !important
+            div
+                display: flex
+                align-items: center
+                padding: 0.5rem 0
+            .ProgramServices
+                figure
+                    width: 15px 
+                    height: 15px 
+                    border-radius: 50%
+                    background-color: $main-blue
+                    margin-bottom: 0 !important
+                b
+                    margin: 0 0.5rem 
+                p
+                    margin-bottom: 0 !important
+                    font-weight: 600
+            .MangmentGeneral
+                figure
+                    width: 15px 
+                    height: 15px 
+                    border-radius: 50%
+                    background-color: black
+                    margin-bottom: 0 !important
+                b
+                    margin: 0 0.5rem 
+                p
+                    margin-bottom: 0 !important
+                    font-weight: 600
+            .Fundraising
+                margin-bottom: 1.5rem
+                figure
+                    width: 15px 
+                    height: 15px 
+                    border-radius: 50%
+                    background-color: gray
+                    margin-bottom: 0 !important
+                b
+                    margin: 0 0.5rem 
+                p
+                    margin-bottom: 0 !important
+                    font-weight: 600
+            a
+                background-color: $main-blue
+                color: white !important
+                width: 80%
+                border: none 
+                outline: none 
+                padding: 0.5rem 0
+                border-radius: 30px
+                padding: 0.8rem 2rem
+                transition: all .5s ease-in-out
+                &:hover
+                    background-color: $main-green
+                img
+                    min-width: 30px !important
+                    min-height: 30px !important
+                    max-width: 30px !important
+                    max-height: 30px !important
+                    object-fit: contain

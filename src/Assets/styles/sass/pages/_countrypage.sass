@@ -1,0 +1,495 @@
+@import "../layout/variables"
+
+.countrypage-header
+    position: relative
+    h1
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #ffffff
+    img
+        max-width: 100% !important
+        object-fit: cover
+        min-width: 100%
+        max-height: 582px !important
+        @media screen and ( max-width: 991px )
+            height: 400px !important
+            width: 100% !important
+        @media screen and ( max-width: 681px )
+            height: 400px !important
+    .shadowONtheImage
+        min-width: 100% !important
+        min-height: 100% !important
+        background-color: $main-blue
+        opacity: 0.5
+        position: absolute
+        top: 0
+        left: 0
+        img
+            min-width: 100% !important
+            min-height: 100% !important
+            max-width: 100% !important
+            max-height: 100% !important
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+    .countryName
+        background-color: #000000ad
+        display: flex !important
+        position: absolute
+        bottom: 0 !important
+        width: 100%
+        left: 50%
+        transform: translateX(-50%)
+        justify-content: space-between
+        align-items: center
+        padding: 2rem 0
+        @media screen and ( max-width: 681px )
+            padding: 0.5rem !important
+        .container
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @media screen and ( max-width: 991px )
+                flex-direction: column
+                align-items: flex-start
+            div
+                max-width: 350px
+                h2
+                    margin-top: 1rem !important
+                    color: white
+                    font-size: 40px
+                    font-weight: 700
+                b
+                    color: yellow
+                p
+                    color: white
+                    @media screen and ( max-width: 991px )
+                        margin-bottom: 0 !important
+
+.countryDonateSection
+    background-color: #0731ad
+    padding: 2rem 0
+    .container
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width: 991px )
+            flex-direction: column !important
+        div
+            @media screen and ( max-width: 991px )
+                width: 100% !important
+            &:first-of-type
+                width: 80%
+            &:last-of-type
+                width: 20%
+            h3
+                color: white
+                margin-bottom: 2rem
+            ul
+                padding-left: 0 !important
+                li
+                    color: white !important
+                    font-weight: 300
+                    margin: 0.5rem 0
+            a
+                padding: 1rem 2rem
+                background-color: white
+                color: $main-blue
+                font-weight: 600
+                border-radius: 15px
+                text-decoration: none !important
+                margin-left: auto !important
+                transition: all .5s ease-in-out
+                &:hover
+                    background-color: $main-green
+                    color: white
+            &:last-of-type
+                display: flex
+                flex-direction: column
+
+.countryDitails
+    padding: 3rem 0 !important
+    background-color: #f3f0ea
+    .container
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width: 991px )
+            flex-direction: column !important
+        div
+            max-width: 550px
+            h1
+                color: #707070
+                font-weight: 700
+                margin-bottom: 2rem 
+                @media screen and ( max-width: 991px )
+                    margin-top: 1rem 
+            ul
+                padding-left: 0 !important
+                li
+                    color: #707070
+
+.country_map
+    background-color: #e4e4e4 !important
+    padding: 3rem 0 !important
+    .container
+        display: flex
+        justify-content: space-between  
+        @media screen and ( max-width: 991px )
+            flex-direction: column
+        div
+            @media screen and ( max-width: 991px )
+                width: 100%
+                margin: 1rem 0
+            h1
+                margin-bottom: 2rem
+            &:last-of-type
+                display: flex
+                justify-content: flex-end
+                margin-left: 1rem
+                @media screen and ( max-width: 991px )
+                    justify-content: center
+                    margin-left: 0rem !important
+            img
+                max-width: 450px
+                max-height: 450px
+                min-height: 449px
+                object-fit: cover
+                @media screen and ( max-width: 991px )
+                    max-width: 300px
+                    max-height: 300px
+                    min-height: 299px
+
+.news_features
+    background-color: #f3f0ea !important
+    padding: 3rem 0 !important
+    .container
+        h1
+            margin-bottom: 2rem
+        div
+            background-color: white
+            position: relative
+            width: 90%
+            height: 500px
+            @media screen and ( max-width: 991px )
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            div
+                background-color: #ffd117
+                color: black
+                font-weight: 600
+                position: absolute
+                width: 300px 
+                height: 300px 
+                right: -110px
+                top: 50%
+                transform: translateY(-50%)
+                padding: 1.5rem
+                font-size: 20px
+                p
+                    margin-top: 0.5rem
+                    margin-bottom: 0 !important
+                a
+                    font-size: 15px
+                    text-decoration: none !important
+                    color: black
+                    position: relative
+                    &:hover
+                        &::after
+                            background-color: $main-green
+                    &::after
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 2px 
+                        background-color: $main-blue
+                        left: 0
+                        bottom: -2px
+                @media screen and ( max-width: 991px )
+                    right: 0px
+                    top: 100%
+                @media screen and ( max-width: 767px )
+                    right: 0px
+
+.activities
+    background-color: #f3efea
+    @media screen and ( max-width: 991px )
+        padding-top: 5rem
+    .container
+        display: flex
+        flex-wrap: wrap
+        .box
+            width: 47%
+            height: 350px
+            background-color: white
+            margin: 6rem 1rem
+            box-shadow: 5px 5px 5px #0000004b
+            position: relative
+            @media screen and ( max-width: 1199px )
+                width: 46%
+            @media screen and ( max-width: 991px )
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            div
+                color: #707070
+                position: absolute
+                bottom: -40px
+                background-color: white 
+                box-shadow: 0px 0px 5px #0000004b   
+                width: 80%
+                padding: 1rem
+                left: 50%
+                transform: translateX(-50%)
+                @media screen and ( max-width: 991px )
+                    bottom: -80px
+                p
+                    margin-bottom: 0.5rem !important
+                a 
+                    color: #707070
+                    text-decoration: none !important
+                    position: relative
+                    &:hover
+                        &::after
+                            background-color: $main-green
+                    &::after
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 2px 
+                        background-color: $main-blue
+                        left: 0
+                        bottom: -2px
+                h5
+                    font-weight: 600
+
+.contrypages_videos
+    padding: 6rem 0
+    background-color: #e4e3e3
+    .container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        div
+            width: 47%
+            margin: 2rem 1rem 
+            height: 342px
+            @media screen and ( max-width: 1199px )
+                width: 46%
+                height: 242px
+            @media screen and ( max-width: 991px )
+                width: 100%
+            @media screen and ( max-width: 500px )
+                width: 100%
+                height: 181px
+            iframe
+                width: 100%
+                height: 100%
+
+// details page style
+.countrypagedetails_header
+    position: relative
+    margin-bottom: 10rem
+    h1
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #ffffff
+    img
+        max-width: 100% !important
+        object-fit: cover
+        min-width: 100%
+        max-height: 582px !important
+        @media screen and ( max-width: 991px )
+            height: 400px !important
+            width: 100% !important
+        @media screen and ( max-width: 681px )
+            height: 400px !important
+    .shadowONtheImage
+        min-width: 100% !important
+        min-height: 100% !important
+        background-color: $main-blue
+        opacity: 0.5
+        position: absolute
+        top: 0
+        left: 0
+        img
+            min-width: 100% !important
+            min-height: 100% !important
+            max-width: 100% !important
+            max-height: 100% !important
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+    .container
+        background-color: white !important
+        position: absolute
+        bottom: -100px !important
+        left: 50%
+        transform: translateX(-50%)
+        box-shadow: 0px 0px 5px #0000004b 
+        padding: 2rem
+        width: 50%
+        margin: auto
+        @media screen and ( max-width: 1199px )
+            width: 100% !important
+        @media screen and ( max-width: 767px )
+            padding: 1rem
+        h5
+            font-weight: 700
+            color: #707070
+            margin: 2rem 0
+            font-size: 25px
+            @media screen and ( max-width: 767px )
+                font-size: 20px                
+        p
+            color: #707070
+
+.country_Details_text
+    margin-top: 2rem
+    background-color: #f3efea
+    .container
+        h5
+            color: #707070
+            line-height: 44px
+
+.news_features_detalis
+    background-color: #f3f0ea !important
+    padding: 3rem 0 !important
+    @media screen and ( max-width: 991px )
+        padding-bottom: 12rem !important
+    .container
+        h1
+            margin-bottom: 2rem
+        div
+            background-color: white
+            position: relative
+            width: 90%
+            height: 500px
+            @media screen and ( max-width: 991px )
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            div
+                background-color: #ffd117
+                color: black
+                font-weight: 600
+                position: absolute
+                width: 300px 
+                height: 300px 
+                right: -110px
+                top: 50%
+                transform: translateY(-50%)
+                padding: 1.5rem
+                font-size: 20px
+                p
+                    margin-top: 0.5rem
+                    margin-bottom: 0 !important
+                a
+                    font-size: 15px
+                    text-decoration: none !important
+                    color: black
+                    position: relative
+                    &:hover
+                        &::after
+                            background-color: $main-green
+                    &::after
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 2px 
+                        background-color: $main-blue
+                        left: 0
+                        bottom: -2px
+                @media screen and ( max-width: 991px )
+                    right: 0px
+                    top: 100%
+                @media screen and ( max-width: 767px )
+                    right: 0px
+
+.countryVidContainer
+    padding-bottom: 6rem 
+    .container
+        p
+            display: flex
+            justify-content: cneter
+            margin: 3rem 0
+            iframe
+                width: 68%
+                margin: auto
+                min-height: 500px
+                @media screen and ( max-width: 1199px )
+                    width: 100%
+                @media screen and ( max-width: 767px )
+                    min-height: 300px
+                @media screen and ( max-width: 500px )
+                    min-height: 198px
+
+.related_news
+    background-color: #e4e3e3 !important
+    padding: 4rem 0
+    .container
+        h1
+            color: #707070
+            font-weight: 700
+    .container.boxes
+        display: flex
+        flex-wrap: wrap
+        .box
+            width: 47%
+            height: 350px
+            background-color: white
+            margin: 4rem 1rem
+            box-shadow: 5px 5px 5px #0000004b
+            position: relative
+            @media screen and ( max-width: 1199px )
+                width: 46%
+            @media screen and ( max-width: 991px )
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            div
+                color: #707070
+                position: absolute
+                bottom: -40px
+                background-color: white 
+                box-shadow: 0px 0px 5px #0000004b   
+                width: 80%
+                padding: 1rem
+                left: 50%
+                transform: translateX(-50%)
+                @media screen and ( max-width: 991px )
+                    bottom: -80px
+                p
+                    margin-bottom: 0.5rem !important
+                a 
+                    color: #707070
+                    text-decoration: none !important
+                    position: relative
+                    &:hover
+                        &::after
+                            background-color: $main-green
+                    &::after
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 2px 
+                        background-color: $main-blue
+                        left: 0
+                        bottom: -2px
+                h5
+                    font-weight: 600

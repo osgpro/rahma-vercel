@@ -1,0 +1,48 @@
+const RamadanContext = [
+    {
+        '_id': '1',
+        'name2': 'وجبة يومية لأسرة / الشهر',
+        'name3': 'وجبة يومية لأسرة / الشهر',
+        'name4': 'وجبة يومية لأسرة / الشهر',
+        'name5': 'وجبة يومية لأسرة / الشهر',
+        'name6': 'وجبة يومية لأسرة / الشهر',
+        'name7': 'وجبة يومية لأسرة / الشهر',
+    },
+    {
+        '_id': '2',
+        // 'name2': 'Ramadan Iftar Meals',
+        'name3': 'Ramadan Iftar Meals',
+        'name4': 'Eid Clothes',
+        'name5': 'Orphan Sponsorship',
+        'name6': 'Ramadan Food Baskets',
+        'name7': 'Zakat Al-Fitr',
+    },
+    {
+        '_id': '3',
+        'name2': 'معلومات الوجبة ومما تتألف',
+        'name3': 'معلومات الوجبة ومما تتألف',
+        'name4': 'معلومات الوجبة ومما تتألف',
+        'name5': 'معلومات الوجبة ومما تتألف',
+        'name6': 'معلومات الوجبة ومما تتألف',
+        'name7': 'معلومات الوجبة ومما تتألف',
+    },
+    {
+        '_id': '4',
+        'name3': 'While those hot meals vary depending on location and availability, each meal consists of a basic grain such as Rice, Bulgur, or Freekeh.  A basic protein such as Chicken, Lamb, or Beef. A side of Yoghurt of Vegetable Salad. And sometimes a piece of Fruit. ',
+        'name4': 'Gift a child and their family new clothes for the Eid season and a gift of Eid money. ',
+        'name5': 'Sponsor an orphan to provide them with shelter, food, education, clothes, and health care.',
+        'name6': 'A large basket of basic and raw food materials for needy families. Each basket contains items that are popular and unique to each area. Those baskets generally consist of Rice, Sugar, Lentil, Tomato Paste, Cooking Oil, Dates, Mixed Beans, Flour, Jam, or similar items.',
+        'name7': 'Your donation can be your Zakat. Provide a needy person with a wholesome and nutritious meal. Each meal consists of a basic grain such as Rice, Bulgur, or Freekeh.  A basic protein such as Chicken, Lamb, or Beef. A side of Yoghurt of Vegetable Salad. And sometimes a piece of Fruit. ',
+        // 'name7': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis! Month ',
+    },
+    {
+        '_id': '5',
+        'name2': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+        'name3': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+        'name4': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+        'name5': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+        'name6': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+        'name7': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis! adipisicing elit. Fugit, veritatis!  ',
+    },
+]
+export default RamadanContext

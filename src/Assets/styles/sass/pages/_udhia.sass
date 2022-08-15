@@ -1,0 +1,167 @@
+@import '../layout/variables'
+
+.Udhia_header
+    position: relative
+    .firsth1
+        color: white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 2000
+    img
+        max-width: 100% !important
+        object-fit: cover
+        min-width: 100%
+        max-height: 582px !important
+        @media screen and ( max-width: 991px )
+            height: 400px !important
+            width: 100% !important
+        @media screen and ( max-width: 681px )
+            height: 200px !important
+    .shadowONtheImage
+        min-width: 100% !important
+        min-height: 100% !important
+        background-color: $main-blue
+        opacity: 0.7
+        position: absolute
+        top: 0
+        left: 0
+        img
+            min-width: 100% !important
+            min-height: 100% !important
+            max-width: 100% !important
+            max-height: 100% !important
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+
+.seasonal_campaigns_box_udhia
+    background-color: #f3f0ea !important
+    padding-top: 4rem
+    .container
+        display: flex !important
+        flex-wrap: wrap !important
+        justify-content: space-around
+        div
+            width: 300px 
+            margin: 1rem 0.5rem
+            img
+                max-width: 300px
+                min-width: 299px 
+                max-height: 180px
+                min-height: 179px
+                object-fit: cover
+                border-radius: 50px 50px 0 0
+            a
+                padding: 0 !important
+                h5
+                    background-color: $main-blue
+                    padding: 1.5rem 0.5rem
+                    color: white
+                    text-align: center
+                    margin-bottom: 0 !important
+                    transition: all .5s ease-in-out
+                    &:hover
+                        background-color: $main-green !important
+            p
+                background-color: white
+                padding: 1.5rem
+                border-radius: 0 0 50px 50px
+                font-size: 12px 
+                color: gray
+                min-height: 156px !important
+
+.countryVidContainerUdhia
+    background-color: #f3f0ea !important
+    padding-bottom: 6rem 
+    padding-top: 6rem 
+    .container
+        p
+            display: flex
+            justify-content: cneter
+            iframe
+                width: 68%
+                margin: auto
+                min-height: 500px
+                @media screen and ( max-width: 1199px )
+                    width: 100%
+                @media screen and ( max-width: 767px )
+                    min-height: 300px
+                @media screen and ( max-width: 500px )
+                    min-height: 198px
+
+.whatisudhia
+    background-color: #f3f0ea !important
+    .container
+        p
+            margin-top: 3rem 
+            background-color: #d2d5e5
+            padding: 2rem 
+            margin-bottom: 0 !important
+            line-height: 30px
+
+
+.videos_section_udhia
+    background-color: #f3f0ea !important
+    padding: 5rem 0
+    .container
+        &:last-of-type
+            display: flex !important
+            flex-wrap: wrap
+            justify-content: space-around
+        h1
+            margin-bottom: 3rem
+        .theVideoitSelf
+            margin: 2rem
+            margin-top: 2rem 
+            position: relative
+            & > div
+                    content: ""
+                    position: absolute
+                    top:  -40px 
+                    width: 150px 
+                    height: 40px
+                    left: 0 !important
+                    text-align: center
+                    line-height: 40px
+                    background-color: #008e89
+                    color: white
+                    font-weight: 700
+            figure
+                width: 100%
+                height: 10px 
+                background-color: #008e89
+                margin: 0 !important
+                margin-top: -0.5rem !important
+            // &:nth-of-type(2)
+            //     div
+            //         background-color: #fba500 !important
+            //     figure
+            //         background-color: #fba500 !important
+            // &:nth-of-type(3)
+            //     div
+            //         background-color: #e64f58 !important
+            //     figure
+            //         background-color: #e64f58 !important
+            // &:nth-of-type(4)
+            //     div
+            //         background-color: #1faad3 !important
+            //     figure
+            //         background-color: #1faad3 !important
+            // &:nth-of-type(5)
+            //     div
+            //         background-color: #1faad3 !important
+            //     figure
+            //         background-color: #1faad3 !important
+            iframe
+                width: 450px !important
+                height: 253px !important
+                @media screen and ( max-width: 1199px )
+                    width: 369px !important
+                    height: 206px !important
+                @media screen and ( max-width: 652px )
+                    max-width: 290px !important
+                @media screen and ( max-width: 652px )
+                    height: 164px !important
