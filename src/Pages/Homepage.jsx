@@ -1151,7 +1151,7 @@ const Homepage = () => {
                 </div>
               </div>
 
-              {!data["events"].title === "" &&
+              {/* {!data["events"].title === "" &&
               !data["events"].description === "" &&
               !data["events"].image === null ? (
                 <></>
@@ -1211,7 +1211,7 @@ const Homepage = () => {
                     </section>
                   </div>
                 </div>
-              )}
+              )} */}
 
               <div className="aboutus-section" style={{ position: "relative" }}>
                 <ModalVideo
